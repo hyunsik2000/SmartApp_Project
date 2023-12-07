@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/Movies', (req, res) => {
-    const sql = 'select * from Movies'
+    const sql = 'select * from Movie'
     
       db.query(sql, (err, rows) => {
           if (err) {
